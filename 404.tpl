@@ -28,6 +28,9 @@
 	<p>
 		{l s='We\'re sorry, but the Web address you\'ve entered is no longer available.'}
 	</p>
+    <p>
+        {l s='I like trains'}
+    </p>
 
 	<h3>{l s='To find a product, please type its name in the field below.'}</h3>
 	<form action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="post" class="std">

@@ -1,3 +1,4 @@
+{debug}
 {*
 * 2007-2016 PrestaShop
 *
@@ -28,8 +29,15 @@
 			{$HOOK_HOME_TAB}
 		</ul>
 	{/if}
+    {if $cart_qties < 5}
+        <p>{l s='Add 5+ products to cart to get free shipping'}</p>
+    {else}
+        <p>{l s='Free shipping!'}</p>
+    {/if}
 	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
 {/if}
+<p>{l|truncate:20 s='Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it?' }</p>
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
 	<div class="clearfix">{$HOOK_HOME}</div>
 {/if}
+<h1>{l s='I like trains'}</h1>
